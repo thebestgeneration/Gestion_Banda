@@ -38,7 +38,7 @@ switch ($action){
         echo $auth ->login();
         break;
     default :
-        echo "Bienvenide";
+        echo "Bienvenida Andrea";
         break;
 }
 ?>
