@@ -1,8 +1,8 @@
 <?php
 if(!defined('DB_SERVER')){
-    require_once("../../config/initialize.php");
+    require_once('config/initialize.php');
 }
-class dbconnection{
+class DBConnection{
     private $host = DB_SERVER;
     private $username = DB_USERNAME;
     private $password = DB_PASSWORD;
