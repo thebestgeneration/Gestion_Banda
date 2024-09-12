@@ -31,10 +31,16 @@ class Login extends DBConnection {
                 }
                 
             }
-            return json_encode(array('status' => 'success'));
+            return json_encode(array('status' => 'success', 'partner_id' => $username));
         }
         else{
-            return json_encode(array('status' => 'incorrect'));
+            return json_encode(array('status' => 'incorrect', 'partner_id' => $username));
+        }
+    }
+
+    public function logout(){
+        if($this->settings->sess_des()){
+            redirect('index.php');
         }
     }
 }
@@ -43,6 +49,9 @@ $auth = new Login();
 switch ($action){
     case 'login':
         echo $auth ->login();
+        break;
+    case 'logout':
+        echo $auth ->logout();
         break;
     default :
         echo "Bienvenida Andrea";

@@ -4,6 +4,9 @@
 <!DOCTYPE html>
 <html lang = "en" class = "" style = "height: auto;">
   <?php require_once(base_app . '../app/includes/header.php') ?>
+    <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
     <body>
       <script>
         start_loader()
@@ -17,7 +20,7 @@
             <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
               <form id="login-frm" class="space-y-6" action="" method="POST">
                 <div>
-                  <label for="code" class="block text-sm font-medium leading-6 text-gray-900">Código de Socio</label>
+                  <label class="block text-sm font-medium leading-6 text-gray-900">Código de Socio</label>
                   <div class="mt-2">
                     <input name="username" type="text" class="form-control" autofocus placeholder="Usuario" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                   </div>
@@ -25,7 +28,7 @@
           
                 <div>
                   <div class="flex items-center justify-between">
-                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Contraseña</label>
+                    <label class="block text-sm font-medium leading-6 text-gray-900">Contraseña</label>
                     <div class="text-sm">
                       <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">¿Olvidaste tu contraseña?</a>
                     </div>

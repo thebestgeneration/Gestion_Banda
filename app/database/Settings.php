@@ -32,6 +32,13 @@ class Settings extends DBConnection{
             $_SESSION['userdata'][$field] = $value;
         }
     }
+
+    function sess_des(){
+        if(isset($_SESSION['userdata'])){
+            unset($_SESSION['userdata']);
+            return true;
+        }
+    }
 }
 
 $_settings = new Settings();
