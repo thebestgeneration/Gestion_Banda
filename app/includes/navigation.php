@@ -3,9 +3,8 @@
     <!-- LOGO -->
     <div style="text-align: center;padding: 0.8125rem 0.5rem;">
         <a href="index.php" style="color: #acc944;">       
-            <img src="logo.jpeg" alt="Banda Logo" style="height: 33px;max-height: unset;object-fit:scale-down;object-position:center center;border-radius: 50%;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;color: #fff !important;">                    
-            <span class="m-1" style="font-family: Source Sans Pro; font-size: 0.875rem; text-decoration: none; line-height: 21px;">
-                LA TRIPLE S
+            <img id="logo" alt="Banda Logo" style="height: 33px;max-height: unset;object-fit:scale-down;object-position:center center;border-radius: 50%;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;color: #fff !important;">                    
+            <span id="title2" class="m-1" style="font-family: Source Sans Pro; font-size: 0.875rem; text-decoration: none; line-height: 21px;">
             </span>
         </a>
     </div>

@@ -39,6 +39,32 @@ class Settings extends DBConnection{
             return true;
         }
     }
+
+    public static function set_flashdata($flash='',$value=''){
+		if(!empty($flash) && !empty($value)){
+			$_SESSION['flashdata'][$flash]= $value;
+		return true;
+		}
+	}
+
+	public static function chk_flashdata($flash = ''){
+		if(isset($_SESSION['flashdata'][$flash])){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	public static function flashdata($flash = ''){
+		if(!empty($flash)){
+			$_tmp = $_SESSION['flashdata'][$flash];
+			unset($_SESSION['flashdata']);
+			return $_tmp;
+		}else{
+			return false;
+		}
+	}
+
 }
 
 $_settings = new Settings();

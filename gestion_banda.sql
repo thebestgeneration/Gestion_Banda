@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 20-08-2024 a las 03:41:13
--- Versión del servidor: 8.3.0
--- Versión de PHP: 8.2.18
+-- Tiempo de generación: 18-09-2024 a las 13:12:12
+-- Versión del servidor: 8.0.31
+-- Versión de PHP: 8.1.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -47,6 +47,20 @@ CREATE TABLE IF NOT EXISTS `partners` (
 
 INSERT INTO `partners` (`id_partner`, `names`, `last_names`, `dni`, `cellphone`, `partner_code`, `password`, `insert_date`, `status`) VALUES
 (1, 'Federico', 'Pez', '76599985', '999888555', '2024001', '1234', '2024-08-19 20:40:14', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `system`
+--
+
+DROP TABLE IF EXISTS `system`;
+CREATE TABLE IF NOT EXISTS `system` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `meta_field` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `meta_value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
